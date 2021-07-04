@@ -146,6 +146,15 @@ ol{
     color: #2196F3;
 }
 
+.mail-phone-logo{
+    margin-right: 10px;
+    fill: black;
+}
+
+.mail-phone-logo:hover{
+    fill: #2196F3;
+}
+
 /*=============END HEADER==========================*/
 
 /*=============HERO==========================*/
