@@ -159,12 +159,14 @@ ol {
 /*=============HERO==========================*/
 
 .business-background {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: (./img/img_backgraund.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  .background-image: picture-in-picture;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url("../img/img_backgraund.png");
+      background-size: cover;
+      padding-top: 272px;
+      padding-bottom: 206px;
+      padding-left: 100px;
 }
 
 .business {
@@ -590,6 +592,11 @@ ol {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.content-maket-position:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-service-portfolio {
@@ -609,6 +616,12 @@ ol {
 .button-service-portfolio:hover {
   background: #2196f3;
   color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.button-service-portfolio{
+  cursor: pointer
 }
 
 .name-content {
