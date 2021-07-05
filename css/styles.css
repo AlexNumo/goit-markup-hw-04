@@ -159,9 +159,12 @@ ol {
 /*=============HERO==========================*/
 
 .business-background {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: (./img/img_backgraund.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  .background-image: picture-in-picture;
 }
 
 .business {
@@ -193,12 +196,20 @@ ol {
   padding: 10px 32px 10px 32px;
   margin: auto;
 }
+
+.background-image {
+  background-image: url(./img/img_backgraund.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /*=============END HERO==========================*/
 
 /*=============WAYS FOR BUSINESS==========================*/
 
 .ways-section-position {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hiden-ways {
@@ -422,7 +433,6 @@ ol {
 }
 
 .clients-logo-position:hover {
-  border-radius: 4px;
   border: 1px solid #2196f3;
 }
 
@@ -485,24 +495,55 @@ ol {
   margin-top: 9px;
 }
 
-.link-sign{
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.link-sign {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 156px;
 }
 
-.address-position{
-
+.position-address-link {
+  display: flex;
+  align-items: baseline;
 }
 
-.footer-position-link-sign{
-    display: flex;
+.footer-position-link-sign {
+  display: flex;
+}
 
+.sign-logo-position {
+  display: flex;
+  margin-left: 85px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.sign-logo-background {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sign-logo-background:not(:nth-last-child(1)) {
+  margin-right: 10px;
+}
+
+.sign-logo {
+  fill: #ffffff;
+}
+
+.sign-logo-background:hover {
+  background-color: #2196f3;
 }
 
 /*=============END FOOTER==========================*/
