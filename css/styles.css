@@ -125,34 +125,69 @@ ol {
   color: #2196f3;
 }
 
-.navigation-bar-studio:hover {
+.navigation-bar-studio:hover,
+.navigation-bar-studio:focus {
   color: #2196f3;
 }
 
-.navigation-bar-portfolio:hover {
+.navigation-bar-portfolio:hover,
+.navigation-bar-portfolio:focus {
   color: #2196f3;
 }
 
-.navigation-bar-contacts:hover {
+.navigation-bar-contacts:hover,
+.navigation-bar-contacts:focus {
   color: #2196f3;
 }
 
-.mail-link:hover {
+/*.mail-link:hover,
+.mail-link:focus {
   color: #2196f3;
 }
 
-.phone-link:hover {
+.phone-link:hover,
+.phone-link:focus {
   color: #2196f3;
 }
-
+*/
 .mail-phone-logo {
   margin-right: 10px;
-  fill: black;
+  fill: #757575;
 }
 
-.mail-phone-logo:hover {
+/*.position-link:hover .mail-phone-logo,
+.position-link:focus .mail-phone-logo{
   fill: #2196f3;
 }
+
+.mail-link:hover,
+.mail-link:focus {
+  color: #2196f3;
+}
+
+.position-link:hover,
+.position-link:focus{
+  color: #2196f3;
+}
+
+
+
+.position-link{
+  width: 165px;
+  height: 20px;
+  margin-right: -140px;
+}*/
+
+
+.mail-phone-position:hover a li,
+.mail-phone-position:focus a li{
+  fill: #2196f3;
+  color: #2196f3;
+}
+
+
+
+
 
 /*=============END HEADER==========================*/
 
@@ -197,12 +232,6 @@ ol {
   border: 10px 32px 10px 32px;
   padding: 10px 32px 10px 32px;
   margin: auto;
-}
-
-.background-image {
-  background-image: url(./img/img_backgraund.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 /*=============END HERO==========================*/
@@ -378,12 +407,15 @@ ol {
   fill: #afb1b8;
 }
 
-.member-logo-background:hover {
-  background-color: #2196f3;
+.member-logo-background:hover .member-logo,
+.member-logo-background:focus .member-logo{
+  fill: #ffffff;
+
 }
 
-.member-logo:hover {
-  fill: #eeeeee;
+.member-logo-background:hover,
+.member-logo-background:focus {
+  background-color: #2196f3;
 }
 
 /*=============END OUR TEAM==========================*/
@@ -430,12 +462,14 @@ ol {
   fill: #afb1b8;
 }
 
-.clients-logo:hover {
-  fill: #2196f3;
+.clients-logo-position:hover,
+.clients-logo-position:focus{
+border: 1px solid #2196f3;
 }
 
-.clients-logo-position:hover {
-  border: 1px solid #2196f3;
+.clients-logo-position:hover .clients-logo,
+.clients-logo-position:focus .clients-logo{
+  fill: #2196f3;
 }
 
 /*=============END OUR CLIENTS==========================*/
@@ -544,7 +578,8 @@ ol {
   fill: #ffffff;
 }
 
-.sign-logo-background:hover {
+.sign-logo-background:hover,
+.sign-logo-background:focus {
   background-color: #2196f3;
 }
 
