@@ -218,7 +218,6 @@ ol {
 
 .ways-section-position {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .hiden-ways {
@@ -231,7 +230,6 @@ ol {
 
 .ways-card-position {
   width: 270px;
-  height: 101px;
 }
 
 .ways-card-position:not(:nth-last-child(1)) {
