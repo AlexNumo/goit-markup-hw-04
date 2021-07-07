@@ -1,5 +1,6 @@
 :root {
   --main-color: #212121;
+  --main-color-hover-focus: #2196f3;
 }
 
 body {
@@ -14,7 +15,7 @@ a {
 }
 
 .active-page {
-  color: #2196f3;
+  color: var(--main-color-hover-focus);
 }
 
 ul {
@@ -82,7 +83,10 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-right: 50px;
+}
+
+.position-link-mail {
+  margin-right: 30px;
 }
 
 .phone-link {
@@ -103,6 +107,20 @@ ol {
   display: flex;
   margin-top: 28px;
   margin-left: auto;
+  height: 20px;
+}
+
+.mail-phone-logo {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.position-link-mail {
+  display: flex;
+}
+
+.position-link-phone {
+  display: flex;
 }
 
 .navigation-bar a {
@@ -122,86 +140,46 @@ ol {
 }
 
 .logo-thre-letters {
-  color: #2196f3;
+  color: var(--main-color-hover-focus);
 }
 
 .navigation-bar-studio:hover,
-.navigation-bar-studio:focus {
-  color: #2196f3;
-}
-
 .navigation-bar-portfolio:hover,
-.navigation-bar-portfolio:focus {
-  color: #2196f3;
-}
-
 .navigation-bar-contacts:hover,
-.navigation-bar-contacts:focus {
-  color: #2196f3;
+.position-link-mail:hover .mail-link,
+.position-link-phone:hover .phone-link {
+  color: var(--main-color-hover-focus);
 }
 
-/*.mail-link:hover,
-.mail-link:focus {
-  color: #2196f3;
-}
-
-.phone-link:hover,
+.navigation-bar-portfolio:focus,
+.navigation-bar-studio:focus,
+.navigation-bar-contacts:focus,
+.mail-link:focus,
 .phone-link:focus {
-  color: #2196f3;
-}
-*/
-.mail-phone-logo {
-  margin-right: 10px;
-  fill: #757575;
+  color: var(--main-color-hover-focus);
 }
 
-/*.position-link:hover .mail-phone-logo,
-.position-link:focus .mail-phone-logo{
-  fill: #2196f3;
+.position-link-mail:hover .mail-hover-icon,
+.position-link-phone:hover .phone-hover-icon,
+.mail-focus-icon:focus svg,
+.phone-focus-icon:focus svg {
+  fill: var(--main-color-hover-focus);
 }
-
-.mail-link:hover,
-.mail-link:focus {
-  color: #2196f3;
-}
-
-.position-link:hover,
-.position-link:focus{
-  color: #2196f3;
-}
-
-
-
-.position-link{
-  width: 165px;
-  height: 20px;
-  margin-right: -140px;
-}*/
-
-
-.mail-phone-position:hover a li,
-.mail-phone-position:focus a li{
-  fill: #2196f3;
-  color: #2196f3;
-}
-
-
-
-
 
 /*=============END HEADER==========================*/
 
 /*=============HERO==========================*/
 
 .business-background {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-      url("../img/img_backgraund.png");
-      background-size: cover;
-      padding-top: 272px;
-      padding-bottom: 206px;
-      padding-left: 100px;
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/img_backgraund.png");
+  background-size: cover;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
 }
 
 .business {
@@ -408,9 +386,8 @@ ol {
 }
 
 .member-logo-background:hover .member-logo,
-.member-logo-background:focus .member-logo{
+.member-logo-background:focus .member-logo {
   fill: #ffffff;
-
 }
 
 .member-logo-background:hover,
@@ -463,13 +440,14 @@ ol {
 }
 
 .clients-logo-position:hover,
-.clients-logo-position:focus{
-border: 1px solid #2196f3;
+.clients-logo-position:focus {
+  border: 1px solid;
+  border-color: var(--main-color-hover-focus);
 }
 
 .clients-logo-position:hover .clients-logo,
-.clients-logo-position:focus .clients-logo{
-  fill: #2196f3;
+.clients-logo-position:focus .clients-logo {
+  fill: var(--main-color-hover-focus);
 }
 
 /*=============END OUR CLIENTS==========================*/
@@ -580,7 +558,7 @@ border: 1px solid #2196f3;
 
 .sign-logo-background:hover,
 .sign-logo-background:focus {
-  background-color: #2196f3;
+  background-color: var(--main-color-hover-focus);
 }
 
 /*=============END FOOTER==========================*/
@@ -630,8 +608,9 @@ border: 1px solid #2196f3;
   cursor: pointer;
 }
 
-.content-maket-position:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.content-maket-position:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-service-portfolio {
@@ -651,12 +630,13 @@ border: 1px solid #2196f3;
 .button-service-portfolio:hover {
   background: #2196f3;
   color: white;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.button-service-portfolio{
-  cursor: pointer
+.button-service-portfolio {
+  cursor: pointer;
 }
 
 .name-content {
